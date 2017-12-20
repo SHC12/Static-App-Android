@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.minangadventure.dedie.minangadventure.DetailTandikek">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerTandikek"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorTandikek"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></me.relex.circleindicator.CircleIndicator>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="410dp">
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_below="@id/viewPagerTandikek"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:text="Gunung Tandikek"
+                android:textSize="30dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_below="@id/txtJudul"
+                android:layout_marginLeft="20dp"
+                android:text="LOKASI : Kabupaten Tanah Datar "
+                android:textSize="15dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txtIsi"
+                android:text="Gunung Tandikek termasuk salah satu dari tiga gunung yang dikenal dengan sebutan Puncak Tri Arga yang berarti penyangga langit Minangkabau yang diantaranya Gunung Marapi, Gunung Singgalang, dan Gunung Tandikek.\nGunung yang bertipe stratovulcano ini memiliki ketinggian 2438 meter diatas permukaan laut dan merupakan gunung terendah diantara ketiganya."
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:layout_below="@id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

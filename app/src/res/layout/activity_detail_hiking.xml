@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    tools:context="com.minangadventure.dedie.minangadventure.DetailHiking">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerHiking"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorHiking"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></me.relex.circleindicator.CircleIndicator>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="410dp">
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_below="@id/viewPagerHiking"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:text="Gunung Singgalang"
+                android:textSize="30dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_below="@id/txtJudul"
+                android:layout_marginLeft="20dp"
+                android:text="LOKASI : Bukittinggi "
+                android:textSize="15dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txtIsi"
+                android:text="Gunung Singgalang dapat ditempuh dari beberapa jalur. Namun, jalur yang terkenal adalah melewati desa Koto Baru dan Pandai Sikek. Dari desa Koto Baru kita akan menempuh rute ke Desa Pandai Sikek. Dari desa inilah titik tolak menuju tower.\nMenu tower pemancar ini kita akan melewati jalan beraspal yang menanjak, makin dekat ke tower jalannya semakin tidak baik dan penuh oleh kerikil-kerikil kecil dan disamping kanan dan kiri terdapat ladang pertanian penduduk"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:layout_below="@id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

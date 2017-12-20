@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minangadventure.dedie.minangadventure">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ico"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuUtama" />
+        <activity
+            android:name=".Adventure"
+            android:label="Adventure"
+            android:parentActivityName=".Adventure" />
+        <activity
+            android:name=".Surfing"
+            android:label="Surfing"
+            android:parentActivityName=".Surfing" />
+        <activity
+            android:name=".Hiking"
+            android:label="Hiking"
+            android:parentActivityName=".Hiking" />
+        <activity
+            android:name=".Rafting"
+            android:label="Rafting"
+            android:parentActivityName=".Rafting" />
+        <activity
+            android:name=".Cycling"
+            android:label="Cycling"
+            android:parentActivityName=".Cycling" />
+        <activity
+            android:name=".Climbing"
+            android:label="Climbing"
+            android:parentActivityName=".Climbing" />
+        <activity
+            android:name=".Diving"
+            android:label="Diving"
+            android:parentActivityName=".Diving" />
+        <activity
+            android:name=".Caving"
+            android:label="Caving"
+            android:parentActivityName=".Caving" />
+        <activity
+            android:name=".Paralayang"
+            android:label="Paralayang"
+            android:parentActivityName=".Paralayang" />
+        <activity
+            android:name=".About"
+            android:label="About"
+            android:parentActivityName=".About" />
+        <activity
+            android:name=".Snorkeling"
+            android:label="Snorkeling"
+            android:parentActivityName=".Snorkeling" />
+        <activity
+            android:name=".DetailSurfing"
+            android:label="Surfing"
+            android:parentActivityName=".DetailSurfing" />
+        <activity
+            android:name=".DetailHiking"
+            android:label="Hiking"
+            android:parentActivityName=".DetailHiking" />
+        <activity
+            android:name=".DetailRafting"
+            android:label="Rafting"
+            android:parentActivityName=".DetailRafting" />
+        <activity
+            android:name=".DetailCycling"
+            android:label="Cycling"
+            android:parentActivityName=".DetailCycling" />
+        <activity
+            android:name=".DetailClimbing"
+            android:label="Climbing"
+            android:parentActivityName=".DetailClimbing" />
+        <activity
+            android:name=".DetailDiving"
+            android:label="Diving"
+            android:parentActivityName=".DetailDiving" />
+        <activity
+            android:name=".DetailCaving"
+            android:label="Caving"
+            android:parentActivityName=".DetailCaving" />
+        <activity
+            android:name=".DetailParagliding"
+            android:label="Paragliding"
+            android:parentActivityName=".DetailParagliding" />
+        <activity
+            android:name=".DetailSipora"
+            android:label="Pulau Sipora"
+            android:parentActivityName=".DetailSipora"/>
+
+        <activity android:name=".DetailPurus" android:label="Surfing" android:parentActivityName=".DetailPurus"/>
+        <activity android:name=".DetailManis" android:label="Surfing" android:parentActivityName=".DetailManis"/>
+        <activity android:name=".DetailTalago" android:label="Caving" android:parentActivityName=".DetailTalago"/>
+        <activity android:name=".DetailMarapi" android:label="Hiking" android:parentActivityName=".DetailMarapi"/>
+        <activity android:name=".DetailTalang" android:label="Hiking" android:parentActivityName=".DetailTalang"/>
+        <activity android:name=".DetailTandikek" android:label="Hiking" android:parentActivityName=".DetailTandikek"/>
+        <activity android:name=".DetailTalamau" android:label="Hiking" android:parentActivityName=".DetailTalamau"/>
+        <activity android:name=".DetailSago" android:label="Hiking" android:parentActivityName=".DetailSago"/>
+        <activity android:name=".DetailAntokan" android:label="Rafting" android:parentActivityName=".DetailAntokan"/>
+        <activity android:name=".DetailPatar" android:label="Cycling" android:parentActivityName=".DetailPatar"/>
+        <activity android:name=".DetailGerpah" android:label="Cycling" android:parentActivityName=".DetailGerpah"/>
+        <activity android:name=".DetailBoeloengan" />
+        <activity android:name=".DetailCubadak" android:label="Diving" android:parentActivityName=".DetailCubadak"/>
+        <activity android:name=".DetailPieh" android:label="Diving" android:parentActivityName=".DetailPieh"/>
+        <activity android:name=".DetailPandan" android:label="Diving" android:parentActivityName=".DetailPandan"/>
+        <activity android:name=".DetailTaratak" android:label="Paralayang" android:parentActivityName=".DetailTaratak"/>
+        <activity android:name=".DetailLangkisau" android:label="Paralayang" android:parentActivityName=".DetailLangkisau"/>
+        <activity android:name=".DetailPolan" android:label="Paralayang" android:parentActivityName=".DetailPolan"></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET" />
+</manifest>

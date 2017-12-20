@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context="com.minangadventure.dedie.minangadventure.DetailDiving">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerDiving"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorDiving"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></me.relex.circleindicator.CircleIndicator>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="410dp">
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_below="@id/viewPagerDiving"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:text="Pulau Pagang"
+                android:textSize="30dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_below="@id/txtJudul"
+                android:layout_marginLeft="20dp"
+                android:text="LOKASI : Pulau Pagang "
+                android:textSize="15dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txtIsi"
+                android:text="Pulau Pagang adalah sebuah pulau yang tak terlalu besar dengan luas hanya sekitar 10 hektar tetapi pulau cantik ini memiliki pasir putih pantai yang sangat lembut dan kehidupan bawah lautnya yang belum banyak tersentuh tangan manusia menjadi daya tarik utamanya. Bahkan jika beruntung maka dapat bertemu dengan penyu, pasti akan menjadi pengalaman yang tak terlupakan. Arus ombaknya pun tak terlalu besar"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:layout_below="@id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

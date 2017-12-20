@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvCycling"
+    android:layout_height="80dp"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:foreground="?attr/selectableItemBackground"
+
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iconCycling"
+        android:layout_width="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/iconcycling"
+        android:scaleType="centerCrop"
+        android:layout_height="40dp" />
+
+
+    <TextView
+        android:id="@+id/judulCycling"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/iconCycling"
+        android:text="Judul"
+        android:textColor="#000000"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp"
+        android:drawableRight="@android:drawable/ic_menu_myplaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    </android.support.v7.widget.CardView>

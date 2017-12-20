@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="merah">#ef2929</color>
+    <color name="merahh">#cf0e0e</color>
+    <color name="biru">#3c5bd9</color>
+    <color name="biruu">#2736e2</color>
+    <color name="hijau">#2fb126</color>
+    <color name="hijauu">#4bd244</color>
+
+</resources>

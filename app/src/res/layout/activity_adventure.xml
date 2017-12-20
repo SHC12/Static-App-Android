@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.minangadventure.dedie.minangadventure.Adventure">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_margin="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="100dp"
+        android:layout_height="160dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/gbrSurving"
+        android:scaleType="fitXY"
+        android:src="@drawable/surfing"
+        android:layout_width="100dp"
+        android:layout_height="120dp" />
+    <Button
+        android:id="@+id/btnSurfing"
+        android:layout_below="@id/gbrSurving"
+        android:background="@drawable/rectangle_button"
+        android:layout_width="100dp"
+        android:textSize="10dp"
+        android:text="Berselancar (Surfing)"
+        android:textColor="#bfb8ac"
+        android:layout_height="40dp" />
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card2"
+        android:layout_margin="12dp"
+        android:layout_toRightOf="@id/card1"
+        android:layout_width="100dp"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gbrHiking"
+                android:src="@drawable/naikgun"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="120dp" />
+            <Button
+                android:id="@+id/btnHiking"
+                android:text="Mendaki Gunung (Hiking)"
+                android:background="@drawable/rectangle_button"
+                android:layout_below="@id/gbrHiking"
+                android:layout_width="100dp"
+                android:textSize="10dp"
+                android:textColor="#bfb8ac"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card3"
+        android:layout_margin="12dp"
+        android:layout_toRightOf="@id/card2"
+        android:layout_width="100dp"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gbrRafting"
+                android:src="@drawable/rafting"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="120dp" />
+            <Button
+                android:id="@+id/btnRafting"
+                android:text="Arung Jeram (Rafting)"
+                android:background="@drawable/rectangle_button"
+                android:layout_below="@id/gbrRafting"
+                android:layout_width="100dp"
+                android:textSize="10dp"
+                android:textColor="#bfb8ac"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card4"
+        android:layout_margin="12dp"
+        android:layout_below="@id/card3"
+        android:layout_width="100dp"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gbrCycling"
+                android:src="@drawable/riding"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="120dp" />
+            <Button
+                android:id="@+id/btnCycling"
+                android:text="Bersepeda (Cycling)"
+                android:background="@drawable/rectangle_button"
+                android:layout_below="@id/gbrCycling"
+                android:layout_width="100dp"
+                android:textColor="#bfb8ac"
+                android:textSize="10dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card5"
+        android:layout_margin="12dp"
+        android:layout_below="@id/card2"
+        android:layout_width="100dp"
+        android:layout_toRightOf="@id/card4"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gbrClimbing"
+                android:src="@drawable/climbing"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="120dp" />
+            <Button
+                android:id="@+id/btnClimbing"
+                android:text="Panjat Tebing (Climbing)"
+                android:background="@drawable/rectangle_button"
+                android:layout_below="@id/gbrClimbing"
+                android:layout_width="100dp"
+                android:textSize="10dp"
+                android:textColor="#bfb8ac"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card6"
+        android:layout_margin="12dp"
+        android:layout_below="@id/card3"
+        android:layout_width="100dp"
+        android:layout_toRightOf="@id/card5"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gbrDiving"
+                android:src="@drawable/diving"
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="120dp" />
+            <Button
+                android:id="@+id/btnDiving"
+                android:text="Menyelam \n(Diving)"
+                android:background="@drawable/rectangle_button"
+                android:layout_below="@id/gbrDiving"
+                android:layout_width="100dp"
+                android:textSize="10dp"
+                android:textColor="#bfb8ac"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card7"
+        android:layout_margin="12dp"
+        android:layout_below="@id/card4"
+        android:layout_width="100dp"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gbrCaving"
+                android:src="@drawable/caving"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="120dp" />
+            <Button
+                android:id="@+id/btnCaving"
+                android:text="Susur Gua \n(Caving)"
+                android:background="@drawable/rectangle_button"
+                android:layout_below="@id/gbrCaving"
+                android:layout_width="100dp"
+                android:textSize="10dp"
+                android:textColor="#bfb8ac"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card8"
+        android:layout_margin="12dp"
+        android:layout_below="@id/card5"
+        android:layout_width="100dp"
+        android:layout_toRightOf="@id/card7"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gbrParalayang"
+                android:src="@drawable/paralayang"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="120dp" />
+            <Button
+                android:id="@+id/btnParalayang"
+                android:text="Paralayang (Paradigling)"
+                android:background="@drawable/rectangle_button"
+                android:layout_below="@id/gbrParalayang"
+                android:layout_width="100dp"
+                android:textSize="10dp"
+                android:textColor="#bfb8ac"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+</ScrollView>

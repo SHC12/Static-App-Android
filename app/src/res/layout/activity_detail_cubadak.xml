@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.minangadventure.dedie.minangadventure.DetailCubadak">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerCubadak"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorCubadak"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></me.relex.circleindicator.CircleIndicator>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="410dp">
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_below="@id/viewPagerCubadak"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:text="Cubadak"
+                android:textSize="30dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_below="@id/txtJudul"
+                android:layout_marginLeft="20dp"
+                android:text="LOKASI : Pulau Cubadak "
+                android:textSize="15dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txtIsi"
+                android:text="Pulau Cubadak merupakan salah satu dari puluhan pulau kecil yang terletak di lepas pantai kecil yang terletak di lepas pantai Sumatera Barat, tepatnya di jarak 24 mil lepas pantai Padang. Pulau ini memiliki luas wilayah sekitar 5.749 Km persegi dan berada di ketinggian 0-1000 meter diatas permukaan laut.\nPulau ini memiliki beragam terumbu karang dan biota laut yang berwarna-warni dan memukau"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:layout_below="@id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

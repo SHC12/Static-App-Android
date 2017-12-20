@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context="com.minangadventure.dedie.minangadventure.DetailCaving">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerCaving"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorCaving"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></me.relex.circleindicator.CircleIndicator>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="410dp">
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_below="@id/viewPagerCaving"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:text="Ngalau Indah"
+                android:textSize="30dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_below="@id/txtJudul"
+                android:layout_marginLeft="20dp"
+                android:text="LOKASI : Payahkumbuh "
+                android:textSize="15dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txtIsi"
+                android:text="Ngalau Indah terletak 4 km dari pusat kota Payakumbuh. Objek ini merupakan sebuah gua alam dengan beberapa mulut gua sebagai akses masuk dan keluar. Di dalam gua besar ini kita dapat melihat keindahan stalagtit dan stalagmit yang masih terjaga dengan baik.\n Gua ini dihuni kawanan kelelawar yang membuatnya senantiasa dipenuhi suara riuh sepanjang waktu.\nDidalam gua dengan ketinggian 640 mdpl ini juga terdapat sejumlah bagian dari gua yang memiliki bentuk unik dan sangat khas. Salah satu diantaranya adalah batu Gong. Batu Gong adalah sebuah batu berlubang dengan bentuk seperti kerucut berongga atau menyerupai lonceng"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:layout_below="@id/txtlokasi"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
